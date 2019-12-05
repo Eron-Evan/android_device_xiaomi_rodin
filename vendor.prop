@@ -15,6 +15,9 @@ ro.vendor.mtk_hifiaudio_support=1
 vendor.audio.usb.super_hifi=true
 vendor.audio.usb.iems.period_us=5000
 
+# APK Verity
+ro.apk_verity.mode=2
+
 # Bluetooth
 ro.vendor.bt.connac3=no
 ro.vendor.bt.platform=6897
