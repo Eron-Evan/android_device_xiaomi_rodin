@@ -310,6 +310,9 @@ ro.soc.model=MT6899
 ro.vendor.mediatek.version.branch=alps-mp-v0.mp1.tc8sp2
 ro.vendor.mediatek.version.release=alps-mp-v0.mp1.tc8sp2-V1
 
+# LMK tuning
+ro.lmk.filecache_min_kb=153600
+
 # Media
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
