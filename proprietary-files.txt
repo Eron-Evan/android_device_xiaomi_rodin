@@ -1842,6 +1842,12 @@ vendor/etc/sensor_diag.cfg
 # SQLite
 vendor/lib64/libSQLiteModule_VER_ALL.so
 
+# Sensors (citsensor)
+odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl
+odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml
+odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc
+vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so
+
 # TEE
 vendor/bin/miteelog
 vendor/bin/tee-supplicant

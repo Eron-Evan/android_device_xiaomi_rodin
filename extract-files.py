@@ -30,6 +30,7 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libpqconfig.so',
         'vendor/lib64/libaalservice.so',
         'odm/bin/hw/vendor.xiaomi.hw.touchfeature-service',
+        'odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl',
         'odm/lib64/hw/displayfeature.default.so',
         'odm/lib64/libpaperMode.so',
         'odm/lib64/libmiBrightness.so',
