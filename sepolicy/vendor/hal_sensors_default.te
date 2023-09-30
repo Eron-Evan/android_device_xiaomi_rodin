@@ -1,5 +1,6 @@
 hal_client_domain(hal_sensors_default, hal_audio)
 
+binder_use(hal_sensors_default)
 binder_call(hal_sensors_default, hal_audio_default)
 binder_call(hal_sensors_default, system_server)
 
@@ -15,3 +16,7 @@ allow hal_sensors_default vendor_displayfeature_sysfs:lnk_file r_file_perms;
 
 
 get_prop(hal_sensors_default, vendor_sensors_prop)
+
+# Allow Sensors hal to find hal_audio_hwservice
+hal_client_domain(hal_sensors_default, hal_audio)
+allow hal_sensors_default hal_audio_hwservice:hwservice_manager find;
