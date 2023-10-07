@@ -228,6 +228,9 @@ on post-fs-data
     chown root system /mnt/vendor/md_sec
     chmod 0771 /mnt/vendor/md_sec
 	
+    # Create Audio HAL data directory
+    mkdir /data/vendor/audiohal 0771 system audio
+
     #Create cct mount point
     mkdir /mnt/vendor/cct
     chown root system /mnt/vendor/cct
