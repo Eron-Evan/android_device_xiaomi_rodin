@@ -33,6 +33,9 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc \
     ueventd.mtk.rc
 
+# Characteristics
+PRODUCT_CHARACTERISTICS := nosdcard
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 34
 
