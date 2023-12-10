@@ -1222,7 +1222,7 @@ vendor/etc/camera/mimotion_f4b.bin
 vendor/etc/camera/mimotion_f4w.bin
 vendor/etc/camera/mimotion_f5b.bin
 vendor/etc/camera/mimotion_f5w.bin
-vendor/etc/camera/mt6899/gma_custom.xml
+vendor/etc/camera/mt6899/gma_custom.xml:vendor/etc/camera/gma_custom.txt;SYMLINK=vendor/etc/camera/gma_custom.xml
 
 # Connectivity
 vendor/bin/conninfra_loader
