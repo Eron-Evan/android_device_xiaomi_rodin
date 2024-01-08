@@ -1,0 +1,3 @@
+ro.product.property_source_order=odm,product,vendor,system_ext,system
+import /odm/etc/rodin_${ro.boot.ptcountrycode}_build.prop
+import /odm/etc/${ro.boot.product.hardware.sku}_${ro.boot.hwversion}.prop
