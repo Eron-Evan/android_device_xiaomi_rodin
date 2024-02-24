@@ -6,6 +6,7 @@
 
 DEVICE_PATH := device/xiaomi/rodin
 BUILD_BROKEN_DUP_RULES := true
+IGNORE_PREFER32_ON_DEVICE := true
 
 # Architecture
 TARGET_ARCH := arm64
