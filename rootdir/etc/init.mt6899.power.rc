@@ -23,3 +23,13 @@ on charger
     chmod 0664 /sys/class/Charging_Adapter/pd_adapter/verify_process
     chmod 0664 /sys/class/power_supply/usb/pd_authentication
     start batterysecret
+
+service vendor.hwcomposer /vendor/bin/hw/android.hardware.graphics.composer@3.3-service
+    override
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+    task_profiles HighPerformance
+    writepid /sys/kernel/reserve_pool/pid /proc/sys/binder_prio/composer_pid
