@@ -22,3 +22,4 @@ vendor.bluetooth.ldac.abr=true
 
 # DRM
 drm.service.enabled=true
+ro.netflix.bsp_rev=MTK6899-37606-1
