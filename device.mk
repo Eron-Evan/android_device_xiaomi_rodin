@@ -244,7 +244,9 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayRodin \
-    SystemUIOverlayRodin
+    SystemUIOverlayRodin \
+    TetheringConfigOverlay \
+    WifiOverlay
 
 # Power
 $(call soong_config_set,power_libperfmgr,mode_extension_lib, //$(DEVICE_PATH):libperfmgr-ext-xiaomi)
