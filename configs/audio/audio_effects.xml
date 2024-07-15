@@ -25,6 +25,7 @@
         <library name="pre_processing" path="libaudiopreprocessing.so"/>
         <!--Audio-add Misound -->
         <library name="misoundfx" path="libmisoundfx_mtk_aidl.so"/>
+        <library name="dap" path="libswdap.so"/>
     </libraries>
 
     <!-- list of effects to load.
