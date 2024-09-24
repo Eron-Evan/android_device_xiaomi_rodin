@@ -329,6 +329,7 @@ telephony.lteOnCdmaDevice=1
 
 # Sensor
 ro.vendor.mtk.sensor.support=yes
+ro.vendor.sensors.xiaomi.udfps=true
 
 # Surface Flinger
 debug.sf.disable_backpressure=1
