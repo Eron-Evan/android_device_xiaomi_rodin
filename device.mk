@@ -33,6 +33,10 @@ PRODUCT_PACKAGES += \
     init.sensor_2_0.rc \
     ueventd.mtk.rc
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2712
+TARGET_SCREEN_WIDTH := 1220
+
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
