@@ -2,7 +2,7 @@ Common_CFlags = ["-Wall"]
 Common_CFlags += ["-Werror"]
 
 cc_library_shared {
-    name: "libqtivibratoreffect.malachite",
+    name: "libqtivibratoreffect.rodin",
     vendor: true,
     cflags: Common_CFlags,
     srcs: [
