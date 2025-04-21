@@ -72,5 +72,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/rodin/rodin-vendor.mk)
