@@ -14,3 +14,8 @@ ro.vendor.audio.sos=true
 ro.vendor.mtk_hifiaudio_support=1
 vendor.audio.usb.super_hifi=true
 vendor.audio.usb.iems.period_us=5000
+
+# Bluetooth
+ro.vendor.bt.connac3=no
+ro.vendor.bt.platform=6897
+vendor.bluetooth.ldac.abr=true
