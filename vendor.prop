@@ -19,3 +19,6 @@ vendor.audio.usb.iems.period_us=5000
 ro.vendor.bt.connac3=no
 ro.vendor.bt.platform=6897
 vendor.bluetooth.ldac.abr=true
+
+# DRM
+drm.service.enabled=true
