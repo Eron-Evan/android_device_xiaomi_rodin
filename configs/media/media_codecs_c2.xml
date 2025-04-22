@@ -23,29 +23,23 @@
     </Settings>
     <Decoders>
         <MediaCodec name="c2.mtk.adpcm-ms.decoder" type="audio/x-adpcm-ms">
-            <Alias name="OMX.MTK.AUDIO.DECODER.ADPCM.MS" />
             <Limit name="channel-count" max="8" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.adpcm-dvi-ima.decoder" type="audio/x-adpcm-dvi-ima">
-            <Alias name="OMX.MTK.AUDIO.DECODER.ADPCM.DVI" />
             <Limit name="channel-count" max="8" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.alac.decoder" type="audio/alac">
-            <Alias name="OMX.MTK.AUDIO.DECODER.ALAC" />
             <Limit name="channel-count" max="8" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.wma.decoder" type="audio/x-ms-wma">
-            <Alias name="OMX.MTK.AUDIO.DECODER.WMA" />
             <Limit name="channel-count" max="2" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.mp3.decoder" type="audio/mpeg" rank="9">
-            <Alias name="OMX.MTK.AUDIO.DECODER.MP3" />
             <Limit name="channel-count" max="2" />
             <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
             <Limit name="bitrate" range="8000-320000" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.decoder" type="video/avc">
-            <Alias name="OMX.MTK.VIDEO.DECODER.AVC" />
             <Limit name="size" min="64x64" max="4096x2176" />
             <Quirk name="wants-NAL-fragments" />
             <Feature name="adaptive-playback"/>
@@ -55,7 +49,6 @@
             <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.decoder.secure" type="video/avc">
-            <Alias name="OMX.MTK.VIDEO.DECODER.AVC.secure" />
             <Limit name="size" min="64x64" max="4096x2176" />
             <Quirk name="wants-NAL-fragments" />
             <Feature name="secure-playback" required="true" />
@@ -75,7 +68,6 @@
             <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.decoder" type="video/hevc">
-            <Alias name="OMX.MTK.VIDEO.DECODER.HEVC" />
             <Limit name="size" min="16x16" max="4096x2176" />
             <Feature name="adaptive-playback"/>
             <Feature name="can-swap-width-height"/>
@@ -84,7 +76,6 @@
             <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.decoder.secure" type="video/hevc">
-            <Alias name="OMX.MTK.VIDEO.DECODER.HEVC.secure" />
             <Limit name="size" min="16x16" max="4096x2176" />
             <Feature name="secure-playback" required="true" />
             <Feature name="adaptive-playback"/>
@@ -102,7 +93,6 @@
             <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.dolby.decoder.hevc" type="video/dolby-vision">
-            <Alias name="OMX.MTK.VIDEO.DECODER.HEVC" />
             <Limit name="size" min="16x16" max="4096x2176" />
             <Feature name="adaptive-playback"/>
             <Feature name="can-swap-width-height"/>
@@ -112,7 +102,6 @@
             <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.dolby.decoder.hevc.secure" type="video/dolby-vision">
-            <Alias name="OMX.MTK.VIDEO.DECODER.HEVC.secure" />
             <Limit name="size" min="16x16" max="4096x2176" />
             <Feature name="secure-playback" required="true" />
             <Feature name="adaptive-playback"/>
@@ -122,14 +111,12 @@
             <Limit name="performance-point-3840x2160" value="120" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.heif.decoder" type="image/vnd.android.heic">
-            <Alias name="OMX.MTK.VIDEO.DECODER.HEIF" />
             <Limit name="size" min="16x16" max="16383x16383" />
             <Feature name="adaptive-playback"/>
             <Limit name="concurrent-instances" max="15" />
             <Limit name="performance-point-3840x2160" value="30" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.vp9.decoder" type="video/x-vnd.on2.vp9">
-            <Alias name="OMX.MTK.VIDEO.DECODER.VP9" />
             <Limit name="alignment" value="1x1" />
             <Limit name="size" min="16x16" max="4096x2176" />
             <Feature name="adaptive-playback"/>
@@ -139,7 +126,6 @@
             <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.vp9.decoder.secure" type="video/x-vnd.on2.vp9">
-            <Alias name="OMX.MTK.VIDEO.DECODER.VP9.secure" />
             <Limit name="alignment" value="1x1" />
             <Limit name="size" min="16x16" max="4096x2176" />
             <Quirk name="wants-NAL-fragments" />
@@ -160,7 +146,6 @@
             <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.av1.decoder" type="video/av01">
-            <Alias name="OMX.MTK.VIDEO.DECODER.AV1" />
             <Limit name="alignment" value="1x1" />
             <Limit name="size" min="16x16" max="4096x2176" />
             <Feature name="adaptive-playback"/>
@@ -170,7 +155,6 @@
             <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.av1.decoder.secure" type="video/av01">
-            <Alias name="OMX.MTK.VIDEO.DECODER.AV1.secure" />
             <Limit name="alignment" value="1x1" />
             <Limit name="size" min="16x16" max="4096x2176" />
             <Quirk name="wants-NAL-fragments" />
@@ -200,7 +184,6 @@
             <Feature name="bitrate-modes" value="CBR" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.encoder" type="video/avc">
-            <Alias name="OMX.MTK.VIDEO.ENCODER.AVC" />
             <Limit name="size" min="160x128" max="3840x2176" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
@@ -228,7 +211,6 @@
             <Feature name="special-codec" required="true" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.encoder" type="video/hevc">
-            <Alias name="OMX.MTK.VIDEO.ENCODER.HEVC" />
             <Limit name="size" min="160x128" max="3840x2176" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
@@ -262,7 +244,6 @@
             <Feature name="special-codec" required="true" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.heif.encoder" type="image/vnd.android.heic" >
-            <Alias name="OMX.MTK.VIDEO.ENCODER.HEIF" />
             <Limit name="size" min="160x128" max="16383x16383" />
             <Limit name="alignment" value="16x16" />
             <Limit name="block-size" value="16x16" />
