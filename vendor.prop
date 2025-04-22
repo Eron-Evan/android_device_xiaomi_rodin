@@ -20,6 +20,9 @@ ro.vendor.bt.connac3=no
 ro.vendor.bt.platform=6897
 vendor.bluetooth.ldac.abr=true
 
+# ConsumerIR
+ro.hardware.consumerir=common
+
 # DRM
 drm.service.enabled=true
 ro.netflix.bsp_rev=MTK6899-37606-1

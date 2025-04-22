@@ -212,6 +212,9 @@ vendor/etc/audiodata.db
 vendor/lib64/libbt-vendor.so
 vendor/lib64/libbluetooth_mtk.so
 
+# ConsumerIR
+vendor/lib64/hw/consumerir.common.so
+
 # DRM (Widevine)
 vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/lib64/liboemcrypto.so
