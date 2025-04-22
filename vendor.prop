@@ -23,6 +23,11 @@ vendor.bluetooth.ldac.abr=true
 # ConsumerIR
 ro.hardware.consumerir=common
 
+# Display
+ro.vendor.hdr10plus.enable=1
+ro.vendor.mtk_cuva_hdr_support=1
+ro.vendor.mtk_hdr10p_adaptive_support=1
+
 # DRM
 drm.service.enabled=true
 ro.netflix.bsp_rev=MTK6899-37606-1
