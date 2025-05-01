@@ -66,6 +66,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.mt6899.fingerprint.rc",
+    src: "etc/init.mt6899.fingerprint.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.mt6899.usb.rc",
     src: "etc/init.mt6899.usb.rc",
     sub_dir: "init/hw",
