@@ -43,6 +43,25 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/libvideomode.so',
     ): blob_fixup()
         .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so'),
+    (
+        'vendor/bin/hw/android.hardware.graphics.allocator-V2-service-mediatek.mt6899',
+        'vendor/lib64/libcodec2_fsr.so',
+        'vendor/lib64/libaimemc.so',
+        'vendor/lib64/libcodec2_fsr.so',
+        'vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so',
+        'vendor/lib64/libcodec2_vpp_AISR_plugin.so',
+        'vendor/lib64/libgpud.so',
+        'vendor/lib64/libmtkcam_grallocutils.so',
+        'vendor/lib64/libmtkcam_grallocutils_aidlv2helper.so',
+        'vendor/lib64/egl/libGLES_mali.so',
+        'vendor/lib64/hw/android.hardware.graphics.allocator-V2-mediatek.so',
+        'vendor/lib64/hw/mapper.mediatek.so',
+        'vendor/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so',
+        'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so',
+        'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V4-ndk.so',
+        'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so',
+    ): blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V6-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
