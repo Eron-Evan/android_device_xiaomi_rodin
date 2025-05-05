@@ -17,6 +17,8 @@ from extract_utils.main import (
 namespace_imports = [
     'device/xiaomi/rodin',
     'hardware/mediatek',
+    'hardware/mediatek/libmtkperf_client',
+    'hardware/lineage/compat',
     'hardware/xiaomi',
 ]
 
@@ -75,7 +77,16 @@ blob_fixups: blob_fixups_user_type = {
     (
         'vendor/lib64/vendor.xiaomi.hardware.camera.injection-service.so'
     ): blob_fixup()
-        .replace_needed('android.hardware.camera.device-V1-ndk.so', 'android.hardware.camera.device-V2-ndk.so')
+        .replace_needed('android.hardware.camera.device-V1-ndk.so', 'android.hardware.camera.device-V2-ndk.so'),
+    ('vendor/lib64/libmicamera_hal_core.so',
+     'vendor/lib64/libcameraopt.so',
+     'vendor/lib64/libcam.hal3a.so',
+     'vendor/lib64/libcam.hal3a.ctrl.so',
+     'vendor/lib64/libmialgoengine.so',
+     'vendor/lib64/libmicamera_hal_core.so',
+     'vendor/lib64/libmtkcam_taskmgr.so',
+     'vendor/lib64/hw/hwcomposer.mtk_common.so'): blob_fixup()
+        .add_needed('libprocessgroup_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
