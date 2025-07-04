@@ -208,6 +208,9 @@ vendor/etc/smartpa_param_fs/preset_voice.bin
 vendor/etc/smartpa_param_fs/preset_voip.bin
 vendor/etc/audiodata.db
 
+# Batterysecret
+vendor/bin/batterysecret
+
 # Bluetooth (Driver)
 vendor/etc/init/init.bt_drv.rc
 vendor/lib64/libbt-vendor.so
