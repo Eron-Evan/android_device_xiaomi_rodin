@@ -1464,6 +1464,13 @@ vendor/firmware/v1_fac_fld_coef.bin
 vendor/firmware/v1_fac_fld_config.bin
 vendor/firmware/wifi.cfg
 
+# Fuel Gauge
+vendor/bin/fuelgauged
+vendor/bin/fuelgauged_nvram
+vendor/etc/init/fuelgauged_init.rc
+vendor/etc/init/fuelgauged_nvram_init.rc
+vendor/lib64/libfgauge_gm30.so
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper-service.mitee
 vendor/etc/init/android.hardware.gatekeeper-service.mitee.rc
