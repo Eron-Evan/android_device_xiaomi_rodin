@@ -103,6 +103,12 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    'vendor/lib64/libultrahdr_rodin.so': blob_fixup()
+        .replace_needed('libjpegencoder.so', 'libjpegencoder_rodin.so')
+        .replace_needed('libjpegdecoder.so', 'libjpegdecoder_rodin.so'),
+    ('odm/lib64/camera/plugins/capture/com.xiaomi.plugin.gainmap.so',
+     'odm/lib64/camera/plugins/capture/com.xiaomi.plugin.jpegrAggr.so'): blob_fixup()
+        .replace_needed('libultrahdr.so', 'libultrahdr_rodin.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
