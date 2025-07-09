@@ -14,6 +14,12 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+from extract_utils.fixups_lib import (
+    lib_fixup_remove_arch_suffix,
+    lib_fixups_user_type,
+    libs_clang_rt_ubsan,
+)
+
 namespace_imports = [
     'device/xiaomi/rodin',
     'hardware/mediatek',
@@ -21,6 +27,10 @@ namespace_imports = [
     'hardware/lineage/compat',
     'hardware/xiaomi',
 ]
+
+lib_fixups: lib_fixups_user_type = {
+    libs_clang_rt_ubsan: lib_fixup_remove_arch_suffix,
+}
 
 blob_fixups: blob_fixups_user_type = {
     ('odm/lib64/libmt_mitee.so', 'vendor/bin/hw/android.hardware.security.keymint@3.0-service.mitee'): blob_fixup()
@@ -123,6 +133,7 @@ module = ExtractUtilsModule(
     'rodin',
     'xiaomi',
     blob_fixups=blob_fixups,
+    lib_fixups=lib_fixups,
     namespace_imports=namespace_imports,
 )
 

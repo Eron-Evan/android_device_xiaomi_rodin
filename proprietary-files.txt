@@ -380,7 +380,6 @@ vendor/lib64/libAF.so
 vendor/lib64/libBasicModule.so
 vendor/lib64/libMiMotion.so
 vendor/lib64/libmiSATTranslate.so
-vendor/lib64/libclang_rt.ubsan_standalone-aarch64-android.so
 vendor/lib64/libmicamGlobalPool.so
 vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so
