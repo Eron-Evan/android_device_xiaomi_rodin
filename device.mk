@@ -74,6 +74,11 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     fastbootd
 
+# fstab
+PRODUCT_PACKAGES += \
+    fstab.mt6899 \
+    fstab.mt6899.vendor_ramdisk
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
