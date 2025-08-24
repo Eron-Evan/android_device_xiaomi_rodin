@@ -18,8 +18,8 @@ vendor/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.apuware.apusys-V5-ndk.so
 
 # Audio
-vendor/lib64/hw/audio.primary.mediatek.so:vendor/lib64/hw/audio.primary.mt6899.so
-vendor/lib64/hw/audio.r_submix.mediatek.so:vendor/lib64/hw/audio.r_submix.mt6899.so
+vendor/lib64/hw/audio.primary.mediatek.so:vendor/lib64/hw/audio.primary.mt6899.so;FIX_SONAME
+vendor/lib64/hw/audio.r_submix.mediatek.so:vendor/lib64/hw/audio.r_submix.mt6899.so;FIX_SONAME
 vendor/lib64/hw/sound_trigger.primary.default.so
 vendor/lib64/lib_iir.so
 vendor/lib64/libaudio_param_parser-vnd.so
@@ -49,7 +49,7 @@ vendor/lib64/libMtkSpeechEnh_swb.so
 vendor/lib64/libmtkspparser.so
 vendor/lib64/libmtkspparser_swb.so
 vendor/lib64/librt_extamp_intf.so
-vendor/lib64/libspeech_enh_lib.so
+vendor/lib64/libspeech_enh_lib.so;FIX_SONAME
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libvow_ap_test_aa.so
 vendor/lib64/libvow_ap_test_dd.so
@@ -1340,8 +1340,8 @@ vendor/lib64/liboemcrypto.so
 
 # Fingerprint
 odm/lib64/anc.hal.so
-odm/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so
-odm/lib64/hw/fingerprint.jiiov.so:vendor/lib64/hw/fingerprint.jiiov.default.so
+odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
+odm/lib64/hw/fingerprint.jiiov.so:odm/lib64/hw/fingerprint.jiiov.default.so;FIX_SONAME
 odm/lib64/libgf_hal.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel-V1-ndk.so
 
@@ -1604,7 +1604,7 @@ vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
 vendor/etc/nnapi_powerhal.json
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
 vendor/lib64/mt6899/libneuralnetworks_sl_driver_mtk_prebuilt.so;SYMLINK=vendor/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so
-vendor/lib64/mt6899/libneuron_adapter_mgvi.so;SYMLINK=vendor/lib64/libneuron_adapter_mgvi.so
+vendor/lib64/mt6899/libneuron_adapter_mgvi.so;SYMLINK=vendor/lib64/libneuron_adapter_mgvi.so;FIX_SONAME
 vendor/lib64/mt6899/libneuron_runtime.8.so;SYMLINK=vendor/lib64/libneuron_runtime.8.so
 vendor/lib64/mt6899/libneuron_runtime.so;SYMLINK=vendor/lib64/libneuron_runtime.so
 vendor/lib64/mt6899/libneuron_wrapper.so;SYMLINK=vendor/lib64/libneuron_wrapper.so
@@ -1619,7 +1619,7 @@ vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
 vendor/lib64/libneuroeara.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
-vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
+vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libnpagent.so
 vendor/lib64/libnputils.so
 vendor/lib64/libnpagent_server.so
@@ -1790,11 +1790,11 @@ vendor/etc/virtual-spn-conf-by-imsi.xml
 odm/lib64/libclient2slpi.notifier.so
 vendor/lib64/hw/sensors.dynamic_sensor_hal.so
 vendor/lib64/hw/sensors.elliptic@2.0.so
-vendor/lib64/hw/sensors.mediatek.V2.0.so:vendor/lib64/hw/sensors.mt6899.so
+vendor/lib64/hw/sensors.mediatek.V2.0.so:vendor/lib64/hw/sensors.mt6899.so;FIX_SONAME
 vendor/lib64/libhfmanager.so
 vendor/lib64/libhfmanagerwrapper.so
 vendor/lib64/libhidparser.so
-vendor/lib64/libnotifyaudiohal.so
+vendor/lib64/libnotifyaudiohal.so;FIX_SONAME
 
 # Sensors (Configs)
 odm/etc/sensors/lightSensorCali.json
@@ -1904,7 +1904,7 @@ vendor/etc/vintf/manifest/CommandService.xml
 vendor/etc/wifi/nvram/wfnv_desc_data_soc70.bin
 vendor/etc/wifi/nvram/wfnv_desc_map_soc70.bin
 vendor/lib64/libwapi.so
-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 vendor/lib64/libwifical.so
 vendor/lib64/libwifinvram.so
 vendor/lib64/libwifinvramdata.so
