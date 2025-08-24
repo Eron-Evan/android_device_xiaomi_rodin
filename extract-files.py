@@ -89,7 +89,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libprocessgroup_shim.so'),
     ('vendor/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so',
      'odm/lib64/libwa_widelens_undistort.so',
+     'odm/lib64/libarcsoft_beautyshot.so',
      'vendor/lib64/libMiPhotoFilter.so',
+     'odm/lib64/libMiEmojiEffect.so',
+     'vendor/lib64/mt6899/libneuron_adapter_mgvi.so',
      'odm/lib64/libMiVideoFilter.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_createFromHandle')
