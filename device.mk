@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
     init.mt6899.usb.rc \
     init.mtkgki.rc \
     init.project.rc \
+    init.recovery.usb.rc \
     init.sensor_2_0.rc \
     ueventd.mtk.rc
 
