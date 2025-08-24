@@ -62,6 +62,20 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V7-ndk.so',
     ): blob_fixup()
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V6-ndk.so'),
+    (
+        'vendor/lib64/vendor.xiaomi.hardware.camera.injection-client.so',
+        'vendor/lib64/vendor.xiaomi.hardware.camera.injection-V1-ndk.so'
+    ): blob_fixup()
+        .replace_needed('android.hardware.camera.device-V1-ndk.so', 'android.hardware.camera.device-V2-ndk.so'),
+    (
+        'vendor/lib64/libcamera2ndk_vendor.so'
+    ): blob_fixup()
+        .replace_needed('android.frameworks.cameraservice.service-V2-ndk.so', 'android.frameworks.cameraservice.service-V3-ndk.so')
+        .replace_needed('android.frameworks.cameraservice.device-V2-ndk', 'android.frameworks.cameraservice.device-V3-ndk'),
+    (
+        'vendor/lib64/vendor.xiaomi.hardware.camera.injection-service.so'
+    ): blob_fixup()
+        .replace_needed('android.hardware.camera.device-V1-ndk.so', 'android.hardware.camera.device-V2-ndk.so')
 }  # fmt: skip
 
 module = ExtractUtilsModule(
