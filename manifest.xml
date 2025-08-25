@@ -161,4 +161,8 @@
         <version>1</version>
         <fqname>IMiFxTunnel/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mmagent</name>
+        <fqname>IMMAgent/default</fqname>
+    </hal>
 </manifest>
