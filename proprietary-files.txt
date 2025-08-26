@@ -1,5 +1,15 @@
 # Unpinned blobs from missi-user 15 AP3A.240905.015.A2 OS2.0.101.0.VOJMIXM release-keys
 
+# APU
+vendor/lib64/APUWareApusysAidlServer.so
+vendor/lib64/APUWareUtilsAidlServer.so
+vendor/lib64/libapusys.so
+vendor/lib64/libapu_mdw.so
+vendor/lib64/libapu_mdw_batch.so
+vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
+vendor/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so
+vendor/lib64/vendor.mediatek.hardware.apuware.apusys-V5-ndk.so
+
 # Audio
 vendor/lib64/hw/audio.primary.mediatek.so:vendor/lib64/hw/audio.primary.mt6899.so
 vendor/lib64/hw/audio.r_submix.mediatek.so:vendor/lib64/hw/audio.r_submix.mt6899.so
