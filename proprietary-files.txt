@@ -1589,6 +1589,8 @@ vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xm
 vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml
 
 # Media
+vendor/lib64/libcodec2_vpp_ve_plugin.so
+vendor/lib64/libcodec2_vpp_frc_plugin.so
 vendor/lib64/libbwc.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodecdrv_header_stub.so
@@ -1768,6 +1770,7 @@ vendor/lib64/libtrm.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
+vendor/lib64/libxiaomi_mtkril.so
 vendor/lib64/vendor.mediatek.hardware.clientapi-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
@@ -1835,6 +1838,9 @@ odm/etc/sensors/lightSensorConfigSec.json
 odm/etc/sensors/ois_params_data.json
 vendor/etc/elliptic_sensor.xml
 vendor/etc/sensor_diag.cfg
+
+# SQLite
+vendor/lib64/libSQLiteModule_VER_ALL.so
 
 # TEE
 vendor/bin/miteelog
