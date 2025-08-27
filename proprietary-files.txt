@@ -360,9 +360,13 @@ odm/lib64/libMiVideoFilter.so
 odm/lib64/libportrait_repair_apu.so
 odm/lib64/librfs_warp.so
 odm/lib64/libwa_widelens_undistort.so
+vendor/bin/hw/vendor.xiaomi.hardware.dynamiccameraserver
 vendor/etc/vintf/manifest/manifest_cameraprovider.xml
 vendor/etc/vintf/manifest/manifest_isphal.xml
 vendor/etc/vintf/manifest/manifest_uievent.xml
+vendor/etc/vintf/manifest/manifest_aovservice.xml
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.aidlbgservice-service.xml
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.dynamiccameraserver.xml
 vendor/lib64/hw/mt6899/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/mt6899/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/mt6899/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
@@ -876,7 +880,6 @@ vendor/bin/cameratest
 vendor/bin/camera_cal
 vendor/bin/hw/mt6899/camerahalserver;SYMLINK=vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
-vendor/etc/vintf/manifest/manifest_aovservice.xml
 
 # Camera-configs
 odm/etc/camera/102_SummerDay.png
