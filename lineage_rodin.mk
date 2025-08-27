@@ -16,8 +16,8 @@ $(call inherit-product, device/xiaomi/rodin/device.mk)
 
 PRODUCT_DEVICE := rodin
 PRODUCT_NAME := lineage_rodin
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := mainline
+PRODUCT_BRAND := POCO
+PRODUCT_MODEL := 2412DPC0AG
 PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
