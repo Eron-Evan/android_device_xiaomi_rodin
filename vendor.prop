@@ -159,7 +159,10 @@ persist.vendor.vonr_setting_support=1
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
 ro.vendor.md_auto_setup_ims=1
+ro.vendor.mtk_cta_set=1
 ro.vendor.mtk_data_config=1
+ro.vendor.mtk_telephony_add_on_policy=0
+ro.vendor.vodata_support=1
 ro.vendor.vt_hevc_support=1
 
 # Picture Quality
