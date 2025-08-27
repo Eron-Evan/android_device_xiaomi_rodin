@@ -87,7 +87,6 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/lib64/mt6899/libcam.hal3a.so',
      'vendor/lib64/mt6899/libcam.hal3a.ctrl.so',
      'vendor/lib64/libmialgoengine.so',
-     'vendor/lib64/libmicamera_hal_core.so',
      'vendor/lib64/mt6899/libmtkcam_taskmgr.so',
      'vendor/lib64/hw/hwcomposer.mtk_common.so'): blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
@@ -115,6 +114,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libultrahdr.so', 'libultrahdr_rodin.so'),
     'vendor/etc/vintf/manifest/manifest_media_c2_default.xml': blob_fixup()
         .regex_replace(r'\s*<fqname>IComponentStore/dolby</fqname>\s*', ''),
+    'vendor/lib64/libmisoundfx_mtk_aidl_ext.so': blob_fixup()
+        .replace_needed('android.media.audio.common.types-V3-ndk.so', 'android.media.audio.common.types-V4-ndk.so')
+        .replace_needed('android.hardware.audio.effect-V2-ndk.so', 'android.hardware.audio.effect-V3-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
