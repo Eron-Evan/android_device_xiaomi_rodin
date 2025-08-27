@@ -110,6 +110,8 @@ blob_fixups: blob_fixups_user_type = {
     ('odm/lib64/camera/plugins/capture/com.xiaomi.plugin.gainmap.so',
      'odm/lib64/camera/plugins/capture/com.xiaomi.plugin.jpegrAggr.so'): blob_fixup()
         .replace_needed('libultrahdr.so', 'libultrahdr_rodin.so'),
+    'vendor/etc/vintf/manifest/manifest_media_c2_default.xml': blob_fixup()
+        .regex_replace(r'\s*<fqname>IComponentStore/dolby</fqname>\s*', ''),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
