@@ -1858,6 +1858,19 @@ vendor/etc/vintf/manifest/android.hardware.tetheroffload-V1-service.xml
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 
+# Touchfeature
+odm/bin/toucheventcheck
+odm/bin/hw/vendor.xiaomi.hw.touchfeature-service
+odm/etc/init.panel_info.sh
+odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc
+odm/etc/vintf/manifest/vendor.xiaomi.hw.touchfeature-service.xml
+odm/lib64/libtensorflowlite_touch_c.so
+odm/lib64/libtouchreport_alg_fts.so;FIX_SONAME
+odm/lib64/libtouchreport_alg_goodix.so
+odm/lib64/libtouchreport_hal.so
+odm/lib64/libtouchreport_sensor.so
+odm/lib64/libtouchreport.so
+
 # VPU
 vendor/lib64/libmvpu_cic_ci_compiler_25.so
 vendor/lib64/libmvpu_cic_ci_compiler.so
