@@ -1807,6 +1807,11 @@ vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
 
+# Secure element
+vendor/bin/hw/vendor.xiaomi.hardware.secure_element-service
+vendor/etc/init/secure_element-service.rc
+vendor/lib64/libmigpese@2.0.so
+
 # Sensors
 odm/lib64/libclient2slpi.notifier.so
 vendor/lib64/hw/sensors.dynamic_sensor_hal.so
