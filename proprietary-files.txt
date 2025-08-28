@@ -1603,6 +1603,11 @@ vendor/etc/init/init.vtservice_aidl.rc
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony-impl.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 
+# Init modules
+vendor/bin/init.insmod.sh
+vendor/etc/init.insmod.mt6899.cfg
+vendor/etc/init/hw/init.mtkgki.rc
+
 # Keymint
 vendor/bin/hw/android.hardware.identity-service.mitee@5.0
 vendor/bin/hw/android.hardware.security.keymint@3.0-service.mitee
