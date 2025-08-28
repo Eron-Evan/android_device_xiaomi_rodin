@@ -165,4 +165,10 @@
         <name>vendor.mediatek.hardware.mmagent</name>
         <fqname>IMMAgent/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>android.hardware.secure_element</name>
+        <fqname>ISecureElement/SIM1</fqname>
+        <fqname>ISecureElement/SIM2</fqname>
+        <fqname>ISecureElement/eSE1</fqname>
+    </hal>
 </manifest>
