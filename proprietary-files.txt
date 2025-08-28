@@ -212,6 +212,10 @@ vendor/etc/audio_param/VolumeGainMap_AudioParam.xml
 vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
+vendor/etc/audio_param/mis_audioled_configs.bin
+vendor/etc/audio_param/mis_head.bin
+vendor/etc/audio_param/mis_spk_alt1.bin
+vendor/etc/audio_param/mis_spk.bin
 vendor/etc/smartpa_param/AW_DSP.bin
 vendor/etc/smartpa_param/AW_SINEWAVE_DSP.bin
 vendor/etc/smartpa_param_fs/fsmsdg_params.bin
@@ -275,6 +279,7 @@ odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6899/top_control_data.db;SYMLINK=od
 odm/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6899/ParameterDB_tone.db;SYMLINK=odm/bin/crossbuild/DataSet/SQLiteModule/db/tone/ParameterDB_tone.db;MAKE_COPY_RULE_ONLY
 odm/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6899/ParameterDB_feature.db;SYMLINK=odm/bin/crossbuild/DataSet/SQLiteModule/db/feature/ParameterDB_feature.db;MAKE_COPY_RULE_ONLY
 odm/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6899/ParameterDB_flashcali.db;SYMLINK=odm/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/ParameterDB_flashcali.db;MAKE_COPY_RULE_ONLY
+vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db
 odm/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db
 odm/lib64/camera/plugins/capture/com.xiaomi.plugin.arcrawhdr.so
 odm/lib64/camera/plugins/capture/com.xiaomi.plugin.arcsoftsr.so
@@ -431,6 +436,7 @@ vendor/lib64/libcameraloadcalibrationfiles.so
 vendor/lib64/libcameraopt.so
 vendor/lib64/libcameraplatforminfoxiaomi.so
 vendor/lib64/libcamlog.so
+vendor/lib64/libecoengine.so
 vendor/lib64/libfeature.hdr10.so
 vendor/lib64/libimgsys_osal.so
 vendor/lib64/libimgstream_sync.so
@@ -462,6 +468,7 @@ vendor/lib64/libmtkcam_pgo.so
 vendor/lib64/libmtkcam_pwrutils.android.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/libremosaic_wrapper.so
+vendor/lib64/libvividhdr.so
 vendor/lib64/libultrahdr_mtk.so
 vendor/lib64/mt6899/lib3a.ae.so;SYMLINK=vendor/lib64/lib3a.ae.so
 vendor/lib64/mt6899/lib3a.af.assist.models1d.so;SYMLINK=vendor/lib64/lib3a.af.assist.models1d.so
@@ -1240,7 +1247,7 @@ vendor/etc/camera/mimotion_f4b.bin
 vendor/etc/camera/mimotion_f4w.bin
 vendor/etc/camera/mimotion_f5b.bin
 vendor/etc/camera/mimotion_f5w.bin
-vendor/etc/camera/mt6899/gma_custom.xml:vendor/etc/camera/gma_custom.txt;SYMLINK=vendor/etc/camera/gma_custom.xml
+vendor/etc/camera/mt6899/gma_custom.xml:vendor/etc/camera/mt6899/gma_custom.txt;SYMLINK=vendor/etc/camera/mt6899/gma_custom.xml
 
 # Chipinfo
 vendor/bin/chipinfo
@@ -1354,13 +1361,15 @@ vendor/lib64/libheichal.so
 vendor/lib64/libdisplayfeature.so
 vendor/lib64/libdisplayfeatureservice.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so
-vendor/lib64/libhdrvideo.so
+vendor/lib64/mt6899/libhdrvideo.so;SYMLINK=vendor/lib64/libhdrvideo.so
 
 # DRM (Widevine)
 vendor/apex/com.google.android.widevine.nonupdatable.apex
 vendor/lib64/liboemcrypto.so
 
 # Fingerprint
+odm/app/goodix_sz_rodin/goodix_sz_rodin.apk
+odm/app/JVFactoryTest/JVFactoryTest.apk
 odm/lib64/anc.hal.so
 odm/lib64/hw/fingerprint.goodix_fod.so:odm/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 odm/lib64/hw/fingerprint.jiiov.so:odm/lib64/hw/fingerprint.jiiov.default.so;FIX_SONAME
@@ -1526,8 +1535,10 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Claro_Peru.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CMCC.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CT.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CU.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_DoCoMo.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Entel_Peru.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_KDDI.xml
+vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Rakuten.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_SK_Telecom.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_SoftBank.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Sprint.xml
@@ -1553,6 +1564,7 @@ vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc
 vendor/etc/init/gpuserv-default.rc
 vendor/etc/vintf/manifest/manifest_allocator.xml
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
+vendor/etc/vintf/manifest/manifest_mtkgpuserv.xml
 vendor/etc/vintf/manifest/mapper.mediatek.xml
 vendor/etc/mali_platform.config
 vendor/lib64/egl/libGLES_meow.so
@@ -1660,6 +1672,16 @@ vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
 vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
 vendor/etc/nnapi_powerhal.json
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
+vendor/data/model/mt6899_mc_1088x1920.dla
+vendor/data/model/mt6899_mc_736x1280.dla
+vendor/data/model/mt6899_me_1088x1920.dla
+vendor/data/model/mt6899_me_736x1280.dla
+vendor/data/model/mt6899_text_1088x1920.dla
+vendor/data/model/mt6899_text_736x1280.dla
+vendor/data/model/object_detection.dla
+vendor/data/model/VEdynamic.dla
+vendor/data/model/x2_SR_dynamic.dla
+vendor/data/model/x3_SR_dynamic.dla
 vendor/lib64/mt6899/libneuralnetworks_sl_driver_mtk_prebuilt.so;SYMLINK=vendor/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so
 vendor/lib64/mt6899/libneuron_adapter_mgvi.so;SYMLINK=vendor/lib64/libneuron_adapter_mgvi.so;FIX_SONAME
 vendor/lib64/mt6899/libneuron_runtime.8.so;SYMLINK=vendor/lib64/libneuron_runtime.8.so
@@ -1723,6 +1745,7 @@ odm/etc/o10_36_02_0b_dsc_vdo_pq.xml
 odm/etc/o10_42_02_0a_dsc_vdo_pq.xml
 vendor/etc/vintf/manifest/manifest_mmlpq.xml
 vendor/lib64/hw/mt6899/vendor.mediatek.hardware.pq_aidl-impl.so;SYMLINK=vendor/lib64/hw/vendor.mediatek.hardware.pq_aidl-impl.so
+vendor/lib64/libgz_gp_client.so
 vendor/lib64/libgz_uree.so
 vendor/lib64/libpqframework.so
 vendor/lib64/libpqhdrmetaparser.so
@@ -1731,7 +1754,6 @@ vendor/lib64/libpqtuning.so
 vendor/lib64/libpqxmlflagparser.so
 vendor/lib64/libpqxmlparser.so
 vendor/lib64/librgbwlightsensor.so
-vendor/lib64/libscltm.so
 vendor/lib64/libsdrparser.so
 vendor/lib64/mt6899/libmml.so;SYMLINK=vendor/lib64/libmml.so
 vendor/lib64/mt6899/libmmlpqImpl.so;SYMLINK=vendor/lib64/libmmlpqImpl.so
@@ -1739,6 +1761,7 @@ vendor/lib64/mt6899/libpq_cust_base.so;SYMLINK=vendor/lib64/libpq_cust_base.so
 vendor/lib64/mt6899/libpq_sec.so;SYMLINK=vendor/lib64/libpq_sec.so
 vendor/lib64/mt6899/libpqconfig.so;SYMLINK=vendor/lib64/libpqconfig.so
 vendor/lib64/mt6899/libpqparamparser.so;SYMLINK=vendor/lib64/libpqparamparser.so
+vendor/lib64/mt6899/libscltm.so;SYMLINK=vendor/lib64/libscltm.so
 vendor/lib64/vendor.mediatek.hardware.mmlpq-V3-ndk.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
@@ -1916,11 +1939,35 @@ odm/etc/thermal-arvr.conf
 odm/etc/thermal-camera.conf
 odm/etc/thermal-cclassvideo.conf
 odm/etc/thermal-cgame.conf
+odm/etc/thermal-charge.conf
 odm/etc/thermal-chg-only.conf
 odm/etc/thermal-class0.conf
 odm/etc/thermal-hp-mgame.conf
 odm/etc/thermal-hp-normal.conf
 odm/etc/thermal-huanji.conf
+odm/etc/thermal-in-4k.conf
+odm/etc/thermal-in-arvr.conf
+odm/etc/thermal-in-camera.conf
+odm/etc/thermal-in-cclassvideo.conf
+odm/etc/thermal-in-cgame.conf
+odm/etc/thermal-in-class0.conf
+odm/etc/thermal-in-highfps.conf
+odm/etc/thermal-in-hp-mgame.conf
+odm/etc/thermal-in-hp-normal.conf
+odm/etc/thermal-in-huanji.conf
+odm/etc/thermal-in-map.conf
+odm/etc/thermal-in-mgame.conf
+odm/etc/thermal-in-navigation.conf
+odm/etc/thermal-in-nolimits.conf
+odm/etc/thermal-in-normal.conf
+odm/etc/thermal-in-per-class0.conf
+odm/etc/thermal-in-per-normal.conf
+odm/etc/thermal-in-per-video.conf
+odm/etc/thermal-in-phone.conf
+odm/etc/thermal-in-tgame.conf
+odm/etc/thermal-in-videochat.conf
+odm/etc/thermal-in-video.conf
+odm/etc/thermal-in-yuanshen.conf
 odm/etc/thermal-mgame.conf
 odm/etc/thermal-navigation.conf
 odm/etc/thermal-nolimits.conf
@@ -1929,6 +1976,7 @@ odm/etc/thermal-per-class0.conf
 odm/etc/thermal-per-normal.conf
 odm/etc/thermal-per-video.conf
 odm/etc/thermal-phone.conf
+odm/etc/thermal-region-map.conf
 odm/etc/thermal-tgame.conf
 odm/etc/thermal-videochat.conf
 odm/etc/thermal-video.conf
@@ -1958,6 +2006,8 @@ odm/lib64/libtouchreport.so
 vendor/lib64/libmvpu_cic_ci_compiler_25.so
 vendor/lib64/libmvpu_cic_ci_compiler.so
 vendor/lib64/libmvpu_clc_14_cl_compiler_25.so
+vendor/lib64/libmvpu_clc_14_cl_compiler_data_25.so
+vendor/lib64/libmvpu_clc_14_cl_compiler_op_data_25.so
 vendor/lib64/libmvpu_clc_14_mvpu_debuginfo_25.so
 vendor/lib64/libmvpu_clc_14_mvpu_elf_25.so
 vendor/lib64/libmvpu_clc_14_mvpu_isa_25.so
