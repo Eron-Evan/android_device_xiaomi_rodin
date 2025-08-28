@@ -279,8 +279,8 @@ odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6899/top_control_data.db;SYMLINK=od
 odm/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6899/ParameterDB_tone.db;SYMLINK=odm/bin/crossbuild/DataSet/SQLiteModule/db/tone/ParameterDB_tone.db;MAKE_COPY_RULE_ONLY
 odm/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6899/ParameterDB_feature.db;SYMLINK=odm/bin/crossbuild/DataSet/SQLiteModule/db/feature/ParameterDB_feature.db;MAKE_COPY_RULE_ONLY
 odm/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6899/ParameterDB_flashcali.db;SYMLINK=odm/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/ParameterDB_flashcali.db;MAKE_COPY_RULE_ONLY
-vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db
-odm/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db
+vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db;MAKE_COPY_RULE_ONLY
+odm/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db;MAKE_COPY_RULE_ONLY
 odm/lib64/camera/plugins/capture/com.xiaomi.plugin.arcrawhdr.so
 odm/lib64/camera/plugins/capture/com.xiaomi.plugin.arcsoftsr.so
 odm/lib64/camera/plugins/capture/com.xiaomi.plugin.beautydeformation.so
