@@ -20,6 +20,7 @@ rw_dir_file(vendor_hal_citsensorservice_xiaomi_default, vendor_displayfeature_sy
 allow vendor_hal_citsensorservice_xiaomi_default dmabuf_system_heap_device:chr_file rw_file_perms;
 allow vendor_hal_citsensorservice_xiaomi_default dmabuf_system_secure_heap_device:chr_file { getattr ioctl lock open read watch watch_reads };
 allow vendor_hal_citsensorservice_xiaomi_default fwk_sensor_hwservice:hwservice_manager find;
+allow vendor_hal_citsensorservice_xiaomi_default fwk_sensor_service:service_manager find;
 allow vendor_hal_citsensorservice_xiaomi_default hf_manager_device:chr_file rw_file_perms;
 allow vendor_hal_citsensorservice_xiaomi_default vendor_displayfeature_device:chr_file { ioctl read write open };
 

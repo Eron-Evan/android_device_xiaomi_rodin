@@ -4,6 +4,7 @@ type vendor_hal_displayfeature_default_exec, exec_type, file_type, vendor_file_t
 init_daemon_domain(vendor_hal_displayfeature_default)
 
 binder_use(vendor_hal_displayfeature_default)
+binder_call(vendor_hal_displayfeature_default, mtk_hal_pq)
 
 hal_client_domain(vendor_hal_displayfeature_default, vendor_hal_displayfeature)
 hal_server_domain(vendor_hal_displayfeature_default, vendor_hal_displayfeature)
@@ -18,6 +19,9 @@ allow vendor_hal_displayfeature_default vendor_displayfeature_device:chr_file { 
 
 allow vendor_hal_displayfeature_default persist_data_file:dir create_dir_perms;
 allow vendor_hal_displayfeature_default persist_data_file:file create_file_perms;
+allow vendor_hal_displayfeature_default vendor_display_data_file:file rw_file_perms;
+allow vendor_hal_displayfeature_default vendor_display_data_file:dir rw_dir_perms;
+allow vendor_hal_displayfeature_default mtk_hal_pq_service:service_manager find;
 
 allow vendor_hal_displayfeature_default sysfs_leds:file w_file_perms;
 allow vendor_hal_displayfeature_default sysfs_therm:file w_file_perms;

@@ -1,5 +1,6 @@
 # Audio
 type audio_socket, file_type;
+type fs16xx_device, dev_type;
 type sound_device, dev_type, mlstrustedobject;
 type sysfs_f0_value, fs_type, sysfs_type;
 type sysfs_re25_calib, fs_type, sysfs_type;
@@ -13,6 +14,7 @@ type vendor_camera_update_db_file, file_type, vendor_file_type;
 type vendor_displayfeature_device, dev_type;
 type vendor_displayfeature_sysfs, fs_type, sysfs_type;
 type vendor_persist_display_file, file_type;
+type vendor_display_data_file, file_type;
 
 # Fingerprint
 type vendor_fingerprint_sysfs, sysfs_type, fs_type;
@@ -23,3 +25,6 @@ type vendor_touchfeature_device, dev_type;
 # Trusted Execution Environment (TEE)
 type mitee_data_file, data_file_type, file_type;
 type proc_mitee_log, fs_type, proc_type;
+
+# Touch
+type sysfs_touch_hostprocess, fs_type, sysfs_type;
