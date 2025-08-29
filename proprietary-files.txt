@@ -8,6 +8,8 @@ vendor/lib64/mt6899/libaal_cust_func.so;SYMLINK=vendor/lib64/libaal_cust_func.so
 vendor/lib64/mt6899/libaalservice.so;SYMLINK=vendor/lib64/libaalservice.so
 
 # APU
+vendor/etc/vintf/manifest/manifest_apuware_apusys_aidl.xml
+vendor/etc/vintf/manifest/manifest_apuware_utils_aidl.xml
 vendor/lib64/APUWareApusysAidlServer.so
 vendor/lib64/APUWareUtilsAidlServer.so
 vendor/lib64/libapusys.so
@@ -355,6 +357,7 @@ odm/lib64/libhis_motion_tracker.so
 odm/lib64/libmiai_deblur.so
 odm/lib64/libmiaio_aio_seg.so
 odm/lib64/libMiEmojiEffect.so
+odm/lib64/libmiocr.so
 odm/lib64/libmiphone_capture_bokeh.so
 odm/lib64/libmiphone_capture_depth.so
 odm/lib64/libmiphone_dualcam_depth_aideploy.so
@@ -1360,6 +1363,7 @@ vendor/lib64/libmisight.so
 vendor/lib64/libheichal.so
 vendor/lib64/libdisplayfeature.so
 vendor/lib64/libdisplayfeatureservice.so
+vendor/lib64/libscltm.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk.so
 vendor/lib64/mt6899/libhdrvideo.so;SYMLINK=vendor/lib64/libhdrvideo.so
 
@@ -1619,6 +1623,10 @@ vendor/etc/vintf/manifest/android.hardware.identity@5.0-service.mitee.xml
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service.mitee.xml
 vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xml
 vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml
+
+# MBrain
+vendor/lib64/libmbrainSDKv.so
+vendor/lib64/vendor.mediatek.hardware.mbrain-V6-ndk.so
 
 # Media
 vendor/lib64/libcodec2_vpp_ve_plugin.so
