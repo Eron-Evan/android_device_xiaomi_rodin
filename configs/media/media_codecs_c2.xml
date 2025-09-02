@@ -22,23 +22,6 @@
         <Variant name="slow-cpu" enabled="false" />
     </Settings>
     <Decoders>
-        <MediaCodec name="c2.mtk.adpcm-ms.decoder" type="audio/x-adpcm-ms">
-            <Limit name="channel-count" max="8" />
-        </MediaCodec>
-        <MediaCodec name="c2.mtk.adpcm-dvi-ima.decoder" type="audio/x-adpcm-dvi-ima">
-            <Limit name="channel-count" max="8" />
-        </MediaCodec>
-        <MediaCodec name="c2.mtk.alac.decoder" type="audio/alac">
-            <Limit name="channel-count" max="8" />
-        </MediaCodec>
-        <MediaCodec name="c2.mtk.wma.decoder" type="audio/x-ms-wma">
-            <Limit name="channel-count" max="2" />
-        </MediaCodec>
-        <MediaCodec name="c2.mtk.mp3.decoder" type="audio/mpeg" rank="9">
-            <Limit name="channel-count" max="2" />
-            <Limit name="sample-rate" ranges="8000,11025,12000,16000,22050,24000,32000,44100,48000" />
-            <Limit name="bitrate" range="8000-320000" />
-        </MediaCodec>
         <MediaCodec name="c2.mtk.avc.decoder" type="video/avc">
             <Limit name="size" min="64x64" max="4096x2176" />
             <Quirk name="wants-NAL-fragments" />
@@ -176,13 +159,6 @@
         </MediaCodec>
     </Decoders>
     <Encoders>
-        <MediaCodec name="c2.android.opus.encoder" type="audio/opus">
-            <Limit name="channel-count" max="2" />
-            <Limit name="sample-rate" ranges="8000,12000,16000,24000,48000" />
-            <Limit name="bitrate" range="500-512000" />
-            <Limit name="complexity" range="0-10"  default="5" />
-            <Feature name="bitrate-modes" value="CBR" />
-        </MediaCodec>
         <MediaCodec name="c2.mtk.avc.encoder" type="video/avc">
             <Limit name="size" min="160x128" max="3840x2176" />
             <Limit name="alignment" value="2x2" />
