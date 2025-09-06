@@ -563,6 +563,30 @@
       "Value": "0-3"
     },
     {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 0,
+      "Value": "480000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPUMidClusterMinFreq",
+      "Duration": 0,
+      "Value": "400000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "400000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "GpuPwrLevel",
+      "Duration": 0,
+      "Value": "20"
+    },
+    {
       "PowerHint": "GAME",
       "Type": "EndHint",
       "Value": "INTERACTION"
@@ -589,7 +613,7 @@
       "PowerHint": "GAME",
       "Node": "GpuPwrLevel",
       "Duration": 0,
-      "Value": "5"
+      "Value": "3"
     }
   ]
 }
