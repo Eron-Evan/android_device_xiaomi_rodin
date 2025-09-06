@@ -190,6 +190,11 @@ ro.vendor.mtk_ovl_bringup=0
 ro.vendor.mtk_prefer_64bit_proc=1
 ro.vendor.composer_version=3.3
 
+# HWUI
+debug.cpurend.vsync=false
+debug.hwui.target_cpu_time_percent=30
+debug.hwui.use_hint_manager=true
+
 # IMS
 persist.vendor.mtk.volte.enable=1
 persist.vendor.mtk_ct_volte_support=3
