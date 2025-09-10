@@ -3,6 +3,9 @@ genfscon sysfs /class/smartpa/re25_calib u:object_r:sysfs_re25_calib:s0
 genfscon sysfs /kernel/smartpa/smartpa_type u:object_r:sysfs_re25_calib:s0
 genfscon sysfs /devices/platform/11d00000.i2c/i2c-0/0-005a/f0_value u:object_r:sysfs_f0_value:s0
 
+# Camera
+genfscon proc /c2ps u:object_r:proc_c2ps:s0
+
 # Display
 genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/brightness_clone                   u:object_r:vendor_displayfeature_sysfs:s0
 genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param                         u:object_r:vendor_displayfeature_sysfs:s0
