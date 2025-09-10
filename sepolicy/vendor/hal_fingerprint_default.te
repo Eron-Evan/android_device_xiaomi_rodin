@@ -13,6 +13,5 @@ allow hal_fingerprint_default persist_data_file:dir create_dir_perms;
 allow hal_fingerprint_default persist_data_file:file rw_file_perms;
 allow hal_fingerprint_default vendor_displayfeature_device:chr_file rw_file_perms;
 allow hal_fingerprint_default vendor_touchfeature_device:chr_file rw_file_perms;
-allow hal_fingerprint_default mtk_hal_composer_ext_hwservice:hwservice_manager find;
 
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)

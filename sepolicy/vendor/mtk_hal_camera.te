@@ -6,5 +6,5 @@ r_dir_file(mtk_hal_camera, vendor_camera_update_db_file)
 allow mtk_hal_camera proc_pressure_mem:file rw_file_perms;
 allow mtk_hal_camera vendor_camera_data_file:dir rw_dir_perms;
 allow mtk_hal_camera vendor_camera_data_file:file create_file_perms;
-allow mtk_hal_camera proc_c2fs:dir r_dir_perms;
-allow mtk_hal_camera proc_c2fs:file r_file_perms;
+allow mtk_hal_camera proc_c2ps:dir r_dir_perms;
+allow mtk_hal_camera proc_c2ps:file r_file_perms;
