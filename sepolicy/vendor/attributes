@@ -1,3 +1,8 @@
+# Camera
+attribute hal_aidlbgservice;
+attribute hal_aidlbgservice_client;
+attribute hal_aidlbgservice_server;
+
 # Display
 attribute vendor_hal_displayfeature;
 attribute vendor_hal_displayfeature_client;
