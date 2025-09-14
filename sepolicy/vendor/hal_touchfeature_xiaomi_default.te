@@ -9,3 +9,5 @@ allow hal_touchfeature_xiaomi_default vendor_touchfeature_device:chr_file rw_fil
 allow hal_touchfeature_xiaomi_default sysfs_touch_hostprocess:file rw_file_perms;
 allow hal_touchfeature_xiaomi_default input_device:dir r_dir_perms;
 allow hal_touchfeature_xiaomi_default input_device:chr_file rw_file_perms;
+allow hal_touchfeature_xiaomi_default sysfs_therm:dir search;
+allow hal_touchfeature_xiaomi_default sysfs_therm:file { read open watch };
