@@ -2018,6 +2018,8 @@ odm/lib64/libtouchreport_alg_fts.so;FIX_SONAME
 odm/lib64/libtouchreport_alg_goodix.so
 odm/lib64/libtouchreport_hal.so
 odm/lib64/libtouchreport_sensor.so
+vendor/bin/touch_boost
+vendor/etc/init/touch_boost.rc
 vendor/lib64/vendor.xiaomi.hw.touchfeature-V1-ndk.so;MODULE_SUFFIX=-vendor
 
 # VPU

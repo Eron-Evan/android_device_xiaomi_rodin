@@ -4,6 +4,42 @@ on init
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
 
+on post-fs-data
+    chown system system /proc/touch_boost/enable
+    chmod 0660 /proc/touch_boost/enable
+    chown system system /proc/touch_boost/gas_for_ta
+    chmod 0660 /proc/touch_boost/gas_for_ta
+    chown system system /proc/touch_boost/gas_threshold_for_ta
+    chmod 0660 /proc/touch_boost/gas_threshold_for_ta
+    chown system system /proc/touch_boost/boost_opp_cluster_0
+    chmod 0660 /proc/touch_boost/boost_opp_cluster_0
+    chown system system /proc/touch_boost/boost_opp_cluster_1
+    chmod 0660 /proc/touch_boost/boost_opp_cluster_1
+    chown system system /proc/touch_boost/boost_opp_cluster_2
+    chmod 0660 /proc/touch_boost/boost_opp_cluster_2
+    chown system system /proc/touch_boost/boost_duration
+    chmod 0660 /proc/touch_boost/boost_duration
+    chown system system /proc/touch_boost/active_time
+    chmod 0660 /proc/touch_boost/active_time
+    chown system system /proc/touch_boost/boost_ta
+    chmod 0660 /proc/touch_boost/boost_ta
+    chown system system /proc/touch_boost/boost_fg
+    chmod 0660 /proc/touch_boost/boost_fg
+    chown system system /proc/touch_boost/idleprefer_ta
+    chmod 0660 /proc/touch_boost/idleprefer_ta
+    chown system system /proc/touch_boost/idleprefer_fg
+    chmod 0660 /proc/touch_boost/idleprefer_fg
+    chown system system /proc/touch_boost/deboost_when_render
+    chmod 0660 /proc/touch_boost/deboost_when_render
+    chown system system /proc/touch_boost/force_stop_boost
+    chmod 0660 /proc/touch_boost/force_stop_boost
+    chown system system /proc/touch_boost/boost_up
+    chmod 0660 /proc/touch_boost/boost_up
+    chown system system /proc/touch_boost/boost_down
+    chmod 0660 /proc/touch_boost/boost_down
+    chown system system /sys/devices/platform/mtk-tpd2.0/change_rate
+    chmod 0664 /sys/devices/platform/mtk-tpd2.0/change_rate
+
 service batterysecret /vendor/bin/batterysecret
     class last_start
     user root
