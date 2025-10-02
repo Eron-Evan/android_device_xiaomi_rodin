@@ -110,8 +110,9 @@ ro.vendor.hdr10plus.enable=1
 ro.vendor.mtk_cuva_hdr_support=1
 ro.vendor.mtk_hdr10p_adaptive_support=1
 ro.vendor.mtk_backlight_hwc_support=1
-ro.vendor.mtk_blulight_def_support=1
+ro.vendor.mtk_blulight_def_support=0
 ro.vendor.mtk_dre30_support=1
+ro.vendor.mtk_svp_on_mtee_support=1
 
 # DRM
 drm.service.enabled=true
@@ -155,7 +156,7 @@ ro.vendor.arm.egl.configs.r5_g6_b5_a0_16bit_fixed.framebuffer_target=false
 ro.vendor.arm.egl.configs.r5_g6_b5_a0_16bit_fixed.hal_format=0x4
 ro.vendor.arm.egl.configs.r5_g6_b5_a0_16bit_fixed.recordable=false
 ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_fixed.framebuffer_target=false
-ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_fixed.hal_format=0x3
+ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_fixed.hal_format=0x2
 ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_fixed.recordable=false
 ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_yuv_special.framebuffer_target=false
 ro.vendor.arm.egl.configs.r8_g8_b8_a0_24bit_yuv_special.hal_format=0x23
@@ -179,10 +180,10 @@ ro.vendor.arm.egl.configs.yvu420.hal_format=0x20e
 ro.vendor.arm.egl.configs.yvu420.recordable=true
 ro.vendor.arm.gralloc.afrc_chroma_usage_flags=0x100000000000000,0x80000000000000,0x180000000000000
 ro.vendor.arm.gralloc.afrc_chroma_usage_mask=0x180000000000000
-ro.vendor.arm.gralloc.afrc_luma_usage_flags=0x1400000000000000,0x1200000000000000,0x1000000000000000
-ro.vendor.arm.gralloc.afrc_luma_usage_mask=0x1600000000000000
-ro.vendor.arm.gralloc.afrc_rgba_usage_flags=0x1400000000000000,0x1200000000000000,0x1000000000000000
-ro.vendor.arm.gralloc.afrc_rgba_usage_mask=0x1600000000000000
+ro.vendor.arm.gralloc.afrc_luma_usage_flags=0x50000000,0x60000000,0x40000000
+ro.vendor.arm.gralloc.afrc_luma_usage_mask=0x70000000
+ro.vendor.arm.gralloc.afrc_rgba_usage_flags=0x50000000,0x60000000,0x40000000
+ro.vendor.arm.gralloc.afrc_rgba_usage_mask=0x70000000
 ro.vendor.arm.gralloc.force_back_buffer_usage_flags=0x40000000000000
 ro.vendor.arm.gralloc.force_back_buffer_usage_mask=0x40000000000000
 ro.vendor.arm.gralloc.no_afbc_usage_flags=0x200000000000000
@@ -192,10 +193,8 @@ ro.vendor.arm.gralloc.shared_access_usage_mask=0x50000000
 ro.vendor.mtk.gpud.mm.fbc.disable=false
 ro.vendor.mtk_aal_support=1
 ro.vendor.mtk_aod_support=1
-ro.vendor.mtk.gpu.service=1
 ro.vendor.mml.mtk_mml_support=1
 ro.vendor.mtk_ovl_bringup=0
-ro.vendor.mtk_prefer_64bit_proc=1
 ro.vendor.composer_version=3.3
 
 # HWUI
@@ -219,9 +218,6 @@ ro.vendor.mtk_telephony_add_on_policy=0
 ro.vendor.vodata_support=1
 ro.vendor.vt_hevc_support=1
 
-# MBrain
-ro.vendor.mbrain.mode=mtk
-
 # NeuralNetworks
 debug.mtk_tflite.target_nnapi=29
 ro.vendor.mtk_nn_baseline_support=1
@@ -234,7 +230,6 @@ debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
 persist.vendor.sys.pq.disp.gamma.silky.brightness=1
 persist.vendor.sys.pq.disp_gamma_silky_brightness_by_hwc=1
-persist.vendor.sys.pq.oddmr_dbi_support=0
 persist.vendor.sys.pq.mtk_disp_clarity_support=0
 ro.vendor.mtk_ovl_bringup=0
 ro.vendor.mtk_pq_color_mode=3
@@ -256,7 +251,7 @@ ro.vendor.pq.mtk_disp_game_pq_support=1
 ro.vendor.pq.mtk_disp_gamma_support=1
 ro.vendor.pq.mtk_disp_tdshp_support=1
 ro.vendor.pq.mtk_dre30_support=1
-ro.vendor.pq.mtk_dre_cap=0x3
+ro.vendor.pq.mtk_dre_cap=0
 ro.vendor.pq.mtk_ds_support=1
 ro.vendor.pq.mtk_hdr10_panel_dtmo_support=0
 ro.vendor.pq.mtk_hdr10_plus_recording_support=1
@@ -283,13 +278,14 @@ ro.vendor.mediatek.version.release=alps-mp-v0.mp1.tc8sp2-V1
 
 # Media
 debug.stagefright.c2inputsurface=-1
-media.c2.dmabuf.padding=512
+media.c2.dmabuf.padding=3072
 media.c2.hal.selection=aidl
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.vendor.jpeg_decode_sw_opt=2
 ro.vendor.mtk.c2.vdec.fmt.support.level=2
 ro.vendor.mtk.c2.vdec.vpp.turnkey.memc=1
 ro.vendor.mtk_hdr_video_support=1
+ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
 vendor.media.omx=0
 vendor.mtk.vdec.decode.error.handle.mode=1
@@ -364,7 +360,7 @@ debug.sf.use_phase_offsets_as_durations=1
 ro.surface_flinger.enable_sdr_dimming=true
 persist.sys.sf.color_mode=9
 persist.sys.sf.color_saturation=1.1
-persist.sys.sf.native_mode=2
+persist.sys.sf.native_mode=258
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
