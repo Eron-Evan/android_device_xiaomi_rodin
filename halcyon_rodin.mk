@@ -10,8 +10,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common halcyon stuff.
 $(call inherit-product, vendor/halcyon/config/common.mk)
-HALCYON_BUILD_TYPE := Beta
-WITH_GMS := true
 
 # Inherit from rodin device
 $(call inherit-product, device/xiaomi/rodin/device.mk)
